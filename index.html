@@ -173,36 +173,39 @@
 	</section>
 
 	<section class="s2">
-	<div class="contact">
-		<h3>Email Us</h3>
-		<div class="alert">Your message has been sent</div>
-		<form id="contactForm">
-			<p>
-				<label>Name</label>
-				<input type="text" name="name" id="name" required>
-			</p>
-			<p>
-				<label>Company</label>
-				<input type="text" name="company" id="company">
-			</p>
-			<p>
-				<label>Email Address</label>
-				<input type="email" name="email" id="email" required>
-			</p>
-			<p>
-				<label>Phone Number</label>
-				<input type="text" name="phone" id="phone">
-			</p>
-			<p class="full">
-				<label>Message</label>
-				<textarea name="message" rows="5" id="message"></textarea>
-			</p>
-			<p class="full">
-				<button type="submit">Submit</button>
-			</p>
-		</form>
-	</div>
+		<div class="main-container">
+			<div class="contact">
+				<h3>Email Us</h3>
+				<div class="alert">Your message has been sent</div>
+				<form id="contact-form">
+					<p>
+						<label>Name</label>
+						<input class="input-field" type="text" name="name" id="name" required>
+					</p>
+					<p>
+						<label>Company</label>
+						<input class="input-field" type="text" name="company" id="company">
+					</p>
+					<p>
+						<label>Email Address</label>
+						<input class="input-field" type="email" name="email" id="email" required>
+					</p>
+					<p>
+						<label>Phone Number</label>
+						<input class="input-field" type="text" name="phone" id="phone">
+					</p>
+					<p class="full">
+						<label>Message</label>
+						<textarea class="input-field" name="message" rows="5" id="message"></textarea>
+					</p>
+					<p class="full">
+						<button id="submit-btn" type="submit">Submit</button>
+					</p>
+				</form>
+			</div>
+		</div>
 	</section>
+
 
 	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 	<script type="text/javascript" src="script.js"></script>
