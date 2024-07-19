@@ -12,10 +12,12 @@
 	--previewBg:rgb(251, 249, 243, 0.8);
 	--previewShadow:#f0ead6;
 
-
 	--buttonColor:black;
+	--buttonTextColor: #fff;
 
-
+	--inputFieldBg: var(--secondaryColor);
+	--inputFieldBorder: var(--borderColor);
+	--inputFieldText: var(--secondaryText);
 }
 
 
@@ -99,7 +101,7 @@ h6 { font-size: 16px;}
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-areas: 
+	grid-template-areas:
 		'nav-wrapper nav-wrapper'
 		'left-column right-column'
 	;
@@ -374,10 +376,11 @@ h6 { font-size: 16px;}
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: var(--secondaryColor);
+	background-color: var(--inputFieldBg);
 	border-radius: 5px;
-	border: 1px solid var(--borderColor);
+	border: 1px solid var(--inputFieldBorder);
 	font-size: 14px;
+	color: var(--inputFieldText);
 }
 
 .contact #submit-btn {
@@ -385,7 +388,7 @@ h6 { font-size: 16px;}
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	color: #fff;
+	color: var(--buttonTextColor);
 	background-color: var(--buttonColor);
 	border: none;
 }
@@ -401,7 +404,7 @@ h6 { font-size: 16px;}
 @media screen and (max-width: 800px){
 	.intro-wrapper{
 		grid-template-columns: 1fr;
-		grid-template-areas: 
+		grid-template-areas:
 			'nav-wrapper'
 			'left-column'
 			'right-column'
@@ -409,25 +412,4 @@ h6 { font-size: 16px;}
 	}
 
 	.right-column{
-		justify-content: center;
-	}
-
-}
-
-@media screen and (max-width: 400px){
-	#preview-shadow{
-		max-width: 280px;
-		height: 180px;
-		padding-left: 10px;
-		padding-top: 10px;
-	}
-
-	#preview{
-		width: 280px;
-
-	}
-
-}
-
-
-
+		justify-content:
